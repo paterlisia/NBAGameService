@@ -2,7 +2,7 @@ import requests
 import json
 
 
-def t1():
+def query_by_gid():
 
     health_url = "http://127.0.0.1:5011/api/health"
 
@@ -23,6 +23,6 @@ def t1():
 
 
 if __name__ == "__main__":
-    t1()
+    query_by_gid()
 
 
