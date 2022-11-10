@@ -25,10 +25,9 @@ def get_health():
     return result
 
 
-@app.route("/api/students/<gid>", methods=["GET"])
-def get_student_by_uni(gid):
-
-    result = Game.get_by_key(gid)
+@app.route("/api/games/<date>", methods=["GET"])
+def get_games_by_date(date):
+    result = Game.get_by_date(date)
 
     if result:
         rsp = Response(json.dumps(result), status=200, content_type="application.json")

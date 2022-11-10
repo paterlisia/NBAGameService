@@ -5,7 +5,7 @@ from games import Game
 # test 1: get data entry by game_id
 def query_by_gid():
 
-    res = Game.get_by_key('202204100BRK')
+    res = Game.get_by_date('2022/4/10')
     print(json.dumps(res, indent=2, default=str))
 
 
